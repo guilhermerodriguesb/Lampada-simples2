@@ -1,0 +1,55 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+}
+
+.lamp {
+    position: relative;
+    width: 100px;
+    height: 150px;
+    background-color: #ccc;
+    border-radius: 50%;
+    cursor: pointer;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2), inset 0 10px 20px rgba(0, 0, 0, 0.2);
+    margin-left: 50px;
+}
+
+.lamp::before {
+    content: '';
+    position: absolute;
+    top: 10px;
+    left: 50%;
+    width: 20px;
+    height: 20px;
+    background-color: #111;
+    border-radius: 50%;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    transform: translateX(-50%);
+}
+
+.lamp::after {
+    content: '';
+    position: absolute;
+    top: 35px;
+    left: 50%;
+    width: 60px;
+    height: 60px;
+    background-color: rgba(255, 255, 255, 0.7);
+    border-radius: 50%;
+    box-shadow: 0 2px 10px rgba(255, 255, 255, 0.7), inset 0 -2px 5px rgba(0, 0, 0, 0.2);
+    transform: translateX(-50%);
+}
+
+
+h1 {
+    font-family: "Montserrat", sans-serif; /* Usando a fonte Montserrat */
+    font-size: 36px; /* Tamanho agradável para o título */
+    color: #333; /* Cor do texto, neste caso, um tom de cinza */
+    text-align: left; /* Alinha o título à esquerda */
+    margin: 20px 0; /* Espaçamento de 20px no topo e na parte inferior do título */
+  }
+  
